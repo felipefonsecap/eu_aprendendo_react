@@ -10,7 +10,9 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.0.0/react.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.0.0/react-dom.js"></script>
 	<script>
-		var h1 = React.createElement('h1', null, 'Hello h1 React');
+		var span1 = React.createElement('span', null, "elemento 1");
+		var span2 = React.createElement('span', null, "elemento 2");
+		var h1 = React.createElement('h1', null, [span1,span2]);
 		ReactDOM.render(h1, document.getElementById('app'));
 	</script>
 </body>
